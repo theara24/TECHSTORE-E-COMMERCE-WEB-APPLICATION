@@ -1,145 +1,116 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Globe } from 'lucide-react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
+  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
     setSubmitted(true);
     setFormData({ name: '', email: '', subject: '', message: '' });
     setTimeout(() => setSubmitted(false), 5000);
   };
 
   return (
-    <div className="container mx-auto px-8 py-16">
-      <div className="text-center mb-16">
-        <h1 className="text-5xl font-extrabold text-gray-900 mb-4">Get in Touch</h1>
-        <p className="text-xl text-gray-600">Have questions? We're here to help you find the perfect tech.</p>
-      </div>
+    <div className="flex flex-col gap-24 pb-24">
+      {/* Dynamic Header */}
+      <section className="bg-slate-950 pt-32 pb-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent"></div>
+        <div className="container mx-auto px-8 relative z-10">
+          <h1 className="text-7xl md:text-9xl font-black text-white tracking-tighter mb-8 leading-none">LET'S <span className="text-blue-600">CONNECT.</span></h1>
+          <p className="text-xl text-slate-400 max-w-xl font-medium leading-relaxed">
+            Technical inquiries, partnership proposals, or just a quick "hello"—our team is ready to assist you.
+          </p>
+        </div>
+      </section>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-        {/* Contact Info */}
-        <div className="lg:col-span-1 space-y-8">
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-4">
-            <div className="bg-blue-100 p-3 rounded-lg text-blue-600">
-              <Mail size={24} />
+      <section className="container mx-auto px-8 -mt-32 relative z-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          {/* Contact Details */}
+          <div className="lg:col-span-1 space-y-6">
+            <div className="bg-white p-10 rounded-[2.5rem] shadow-2xl shadow-slate-200/50 border border-slate-50 card-hover">
+              <div className="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6"><Mail size={24} /></div>
+              <h3 className="text-xl font-black text-slate-900 mb-2 tracking-tight uppercase">ELECTRONIC MAIL</h3>
+              <p className="text-slate-500 font-medium">support@techstore.io</p>
+              <p className="text-slate-500 font-medium">media@techstore.io</p>
             </div>
-            <div>
-              <h3 className="font-bold text-gray-800">Email Us</h3>
-              <p className="text-gray-600">support@techstore.com</p>
-              <p className="text-gray-600">sales@techstore.com</p>
+            <div className="bg-white p-10 rounded-[2.5rem] shadow-2xl shadow-slate-200/50 border border-slate-50 card-hover">
+              <div className="w-14 h-14 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center mb-6"><Phone size={24} /></div>
+              <h3 className="text-xl font-black text-slate-900 mb-2 tracking-tight uppercase">VOICE LINE</h3>
+              <p className="text-slate-500 font-medium">+1 (888) TECH-PRO</p>
+              <p className="text-slate-500 font-medium">Mon - Fri, 09:00 - 18:00</p>
+            </div>
+            <div className="bg-white p-10 rounded-[2.5rem] shadow-2xl shadow-slate-200/50 border border-slate-50 card-hover">
+              <div className="w-14 h-14 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-6"><MapPin size={24} /></div>
+              <h3 className="text-xl font-black text-slate-900 mb-2 tracking-tight uppercase">GLOBAL HQ</h3>
+              <p className="text-slate-500 font-medium">Infinite Loop 1, Cupertino</p>
+              <p className="text-slate-500 font-medium">California, USA</p>
             </div>
           </div>
-          
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-4">
-            <div className="bg-green-100 p-3 rounded-lg text-green-600">
-              <Phone size={24} />
-            </div>
-            <div>
-              <h3 className="font-bold text-gray-800">Call Us</h3>
-              <p className="text-gray-600">+1 (555) 123-4567</p>
-              <p className="text-gray-600">Mon-Fri, 9am - 6pm EST</p>
-            </div>
-          </div>
-          
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-4">
-            <div className="bg-purple-100 p-3 rounded-lg text-purple-600">
-              <MapPin size={24} />
-            </div>
-            <div>
-              <h3 className="font-bold text-gray-800">Visit Us</h3>
-              <p className="text-gray-600">123 Tech Avenue, Silicon Valley</p>
-              <p className="text-gray-600">California, CA 94025</p>
+
+          {/* Form */}
+          <div className="lg:col-span-2">
+            <div className="bg-white p-12 md:p-16 rounded-[3.5rem] shadow-2xl shadow-slate-200/50 border border-slate-50 h-full relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/5 rounded-bl-[5rem]"></div>
+              
+              {submitted ? (
+                <div className="h-full flex flex-col items-center justify-center text-center py-20 animate-in fade-in zoom-in duration-500">
+                  <div className="w-24 h-24 bg-green-50 text-green-500 rounded-full flex items-center justify-center mb-8 shadow-xl shadow-green-100">
+                    <Send size={40} />
+                  </div>
+                  <h2 className="text-4xl font-black text-slate-900 mb-4 tracking-tighter uppercase">MESSAGE DISPATCHED</h2>
+                  <p className="text-slate-500 font-medium max-w-sm">Our specialists will review your inquiry and respond within 12 business hours.</p>
+                  <button onClick={() => setSubmitted(false)} className="mt-10 text-blue-600 font-black text-[10px] uppercase tracking-widest hover:underline">Send another message</button>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-8 relative z-10">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="space-y-3">
+                      <label className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] ml-2">Full Designation</label>
+                      <input 
+                        type="text" required placeholder="EG. JOHN DOE"
+                        className="w-full px-8 py-5 bg-slate-50 rounded-[1.5rem] focus:outline-none focus:ring-2 focus:ring-blue-500 font-bold text-slate-900 transition-all border border-transparent hover:border-slate-100"
+                        value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})}
+                      />
+                    </div>
+                    <div className="space-y-3">
+                      <label className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] ml-2">Digital Address</label>
+                      <input 
+                        type="email" required placeholder="YOUR@EMAIL.COM"
+                        className="w-full px-8 py-5 bg-slate-50 rounded-[1.5rem] focus:outline-none focus:ring-2 focus:ring-blue-500 font-bold text-slate-900 transition-all border border-transparent hover:border-slate-100"
+                        value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})}
+                      />
+                    </div>
+                  </div>
+                  <div className="space-y-3">
+                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] ml-2">Inquiry Subject</label>
+                    <input 
+                      type="text" required placeholder="EG. TECHNICAL SUPPORT"
+                      className="w-full px-8 py-5 bg-slate-50 rounded-[1.5rem] focus:outline-none focus:ring-2 focus:ring-blue-500 font-bold text-slate-900 transition-all border border-transparent hover:border-slate-100"
+                      value={formData.subject} onChange={(e) => setFormData({...formData, subject: e.target.value})}
+                    />
+                  </div>
+                  <div className="space-y-3">
+                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] ml-2">Your Brief</label>
+                    <textarea 
+                      required rows="5" placeholder="ELABORATE YOUR REQUEST HERE..."
+                      className="w-full px-8 py-5 bg-slate-50 rounded-[1.5rem] focus:outline-none focus:ring-2 focus:ring-blue-500 font-bold text-slate-900 transition-all border border-transparent hover:border-slate-100 resize-none"
+                      value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})}
+                    ></textarea>
+                  </div>
+                  <button 
+                    type="submit"
+                    className="w-full bg-slate-950 text-white py-6 rounded-3xl font-black text-sm uppercase tracking-widest hover:bg-blue-600 transition-all duration-500 shadow-2xl shadow-slate-900/10 hover:shadow-blue-500/30 flex items-center justify-center gap-3"
+                  >
+                    Transmit Message <Send size={20} />
+                  </button>
+                </form>
+              )}
             </div>
           </div>
         </div>
-
-        {/* Contact Form */}
-        <div className="lg:col-span-2">
-          <div className="bg-white p-10 rounded-2xl shadow-md border border-gray-100">
-            {submitted ? (
-              <div className="text-center py-12">
-                <div className="bg-green-100 text-green-600 p-4 rounded-full inline-block mb-4">
-                  <Send size={40} />
-                </div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-2">Message Sent!</h2>
-                <p className="text-gray-600">Thank you for reaching out. We'll get back to you within 24 hours.</p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">Full Name</label>
-                    <input 
-                      type="text" 
-                      name="name"
-                      required
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="John Doe"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
-                    <input 
-                      type="email" 
-                      name="email"
-                      required
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="john@example.com"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Subject</label>
-                  <input 
-                    type="text" 
-                    name="subject"
-                    required
-                    value={formData.subject}
-                    onChange={handleChange}
-                    placeholder="Inquiry about product"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
-                  <textarea 
-                    name="message"
-                    required
-                    rows="5"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Your message here..."
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  ></textarea>
-                </div>
-                <button 
-                  type="submit"
-                  className="w-full bg-blue-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200 flex items-center justify-center gap-2"
-                >
-                  Send Message <Send size={20} />
-                </button>
-              </form>
-            )}
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   );
 };
