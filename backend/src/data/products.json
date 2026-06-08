@@ -4,7 +4,12 @@
     "name": "MacBook Pro 14\"",
     "description": "Apple M3 Pro chip, 18GB RAM, 512GB SSD. The ultimate powerhouse for professionals.",
     "price": 1999,
-    "image": "https://images.unsplash.com/photo-1517336714467-d13a863f1774?w=800&q=80",
+    "image": "https://www.ione.com.kh/wp-content/uploads/2025/07/macbook-pro-14-inch-m4-5-cambodia.png",
+    "images": [
+      "https://ecommerce-storage1.khmercatgroup.vip/ecommerce-storage/media/MacBook-Pro14---M4-Space-Black-3.jpg",
+      "https://www.ione.com.kh/wp-content/uploads/2025/07/macbook-pro-14-inch-m4-8-cambodia.png",
+      "https://ecommerce-storage1.khmercatgroup.vip/ecommerce-storage/media/MacBook-Pro14---M4-Space-Black-1.jpg"
+    ],
     "category": "Laptops"
   },
   {
@@ -12,39 +17,220 @@
     "name": "Dell XPS 15",
     "description": "Intel Core i9, 32GB RAM, 1TB SSD, NVIDIA RTX 4060. Stunning InfinityEdge display.",
     "price": 2199,
-    "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=800&q=80",
+    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9530/media-gallery/touch-black/notebook-xps-15-9530-t-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=654&qlt=100,1&resMode=sharp2&size=654,402&chrss=full",
+    "images": [
+      "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9530/media-gallery/touch-black/notebook-xps-15-9530-t-black-gallery-4.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=677&qlt=100,1&resMode=sharp2&size=677,402&chrss=full",
+      "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9530/media-gallery/touch-black/notebook-xps-15-9530-t-black-gallery-5.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=677&qlt=100,1&resMode=sharp2&size=677,402&chrss=full",
+      "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9530/media-gallery/touch-black/notebook-xps-15-9530-t-black-gallery-3.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=518&qlt=100,1&resMode=sharp2&size=518,402&chrss=full"
+    ],
     "category": "Laptops"
   },
   {
     "id": 3,
-    "name": "Keychron K2 V2",
-    "description": "Wireless Mechanical Keyboard with RGB Backlight, Gateron G Pro Brown switches.",
-    "price": 99,
-    "image": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=800&q=80",
-    "category": "Accessories"
+    "name": "MacBook Air M4",
+    "description": "Apple M4 chip, 16GB RAM, 256GB SSD. Ultra-thin design meets astonishing performance.",
+    "price": 1299,
+    "image": "https://idealz.lk/wp-content/uploads/2025/03/MACBOOK-AIR-M4-SILVER.jpg",
+    "images": [
+      "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-size-unselect-202601-gallery-1_FMT_WHH?wid=690&hei=720&fmt=jpeg&qlt=90&.v=1767638908527",
+      "https://arystorephone.com/wp-content/uploads/2025/03/MacBook-Air-15-M4-Sky-Blue.jpg?v=1764051225",
+      "https://macfinder.co.uk/wp-content/uploads/2023/03/img-MacBook-Air-13-Inch-32502-scaled.jpg"
+    ],
+    "category": "Laptops"
   },
   {
     "id": 4,
-    "name": "Logitech MX Master 3S",
-    "description": "Performance Wireless Mouse with ultra-fast scrolling and ergonomic design.",
-    "price": 99,
-    "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800&q=80",
-    "category": "Accessories"
+    "name": "Lenovo ThinkPad X1 Carbon",
+    "description": "Intel Core i7, 16GB RAM, 512GB SSD. Lightweight business class with military-grade durability.",
+    "price": 1749,
+    "image": "https://m.media-amazon.com/images/I/71B06cYCkyL._AC_SX679_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71bf+AzCnGL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/51StUBlpCwL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61FB2+hgdaL._AC_SX679_.jpg"
+    ],
+    "category": "Laptops"
   },
   {
     "id": 5,
-    "name": "Sony WH-1000XM5",
-    "description": "Industry-leading noise-canceling wireless headphones with exceptional sound.",
-    "price": 349,
-    "image": "https://images.unsplash.com/photo-1618366712277-7ca91f2cc094?w=800&q=80",
-    "category": "Audio"
+    "name": "Keychron K2 V2",
+    "description": "Wireless Mechanical Keyboard with RGB Backlight, Gateron G Pro Brown switches.",
+    "price": 99,
+    "image": "https://m.media-amazon.com/images/I/61dXb5X1mYL._AC_SX679_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71ZROlrn8GL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71lROjZI4sL._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/61CVbPcV9KL._AC_SL1500_.jpg"
+    ],
+    "category": "Accessories"
   },
   {
     "id": 6,
+    "name": "Logitech MX Master 3S",
+    "description": "Performance Wireless Mouse with ultra-fast scrolling and ergonomic design.",
+    "price": 99,
+    "image": "https://m.media-amazon.com/images/I/516RYJe1OtL._AC_SX679_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/61yPmy5m5DL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/51BH-hesA1L._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/51VRXtQp1CL._AC_SX679_.jpg"
+    ],
+    "category": "Accessories"
+  },
+  {
+    "id": 7,
+    "name": "Razer DeathAdder V3 Pro",
+    "description": "Ultra-lightweight wireless gaming mouse with 30K DPI optical sensor.",
+    "price": 149,
+    "image": "https://m.media-amazon.com/images/I/71fRKz9pUnL._AC_SX679_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/61miGYkfVdL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/712F17t0IbL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71nyt-8Q9bL._AC_SX679_.jpg"
+    ],
+    "category": "Accessories"
+  },
+  {
+    "id": 8,
+    "name": "Logitech StreamCam",
+    "description": "1080p60 USB-C webcam with auto-focus and premium glass lens for creators.",
+    "price": 169,
+    "image": "https://m.media-amazon.com/images/I/71-fdSpTk5L._AC_SX679_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/81BE4HfXZUL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81NGscxuFxL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81xYiKNDkCL._AC_SX679_.jpg"
+    ],
+    "category": "Accessories"
+  },
+  {
+    "id": 9,
+    "name": "Sony WH-1000XM5",
+    "description": "Industry-leading noise-canceling wireless headphones with exceptional sound.",
+    "price": 349,
+    "image": "https://m.media-amazon.com/images/I/61O3iMlnJIL._AC_SX679_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/81+4fB1ehJL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61VUD9Zh9sL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81q1SrpG1PL._AC_SX679_.jpg"
+    ],
+    "category": "Audio"
+  },
+  {
+    "id": 10,
+    "name": "AirPods Max",
+    "description": "Apple over-ear headphones with high-fidelity audio and active noise cancellation.",
+    "price": 549,
+    "image": "https://m.media-amazon.com/images/I/61C5t1ltM5L._AC_SX679_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/51tRwYxc7pL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61PQ3EhiYIL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61mTD+9lu6L._AC_SX679_.jpg"
+    ],
+    "category": "Audio"
+  },
+  {
+    "id": 11,
+    "name": "Sony WF-1000XM5",
+    "description": "Best-in-class true wireless earbuds with noise cancellation and Hi-Res Audio.",
+    "price": 279,
+    "image": "https://m.media-amazon.com/images/I/61GJAFdM9pL._AC_SX300_SY300_QL70_FMwebp_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/51lgV-3qMLL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/91rBRERHmoL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81ULbDNPJ0L._AC_SX679_.jpg"
+    ],
+    "category": "Audio"
+  },
+  {
+    "id": 12,
     "name": "Samsung Odyssey G7",
     "description": "32-inch Curved Gaming Monitor, 240Hz, 1ms, QLED, WQHD resolution.",
     "price": 699,
-    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&q=80",
+    "image": "https://m.media-amazon.com/images/I/81-olLMOeQL._AC_SX679_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/81LIaYZI3HL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81LqWIDe4+L._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/713uJ2ZjsXL._AC_SX679_.jpg"
+    ],
     "category": "Monitors"
+  },
+  {
+    "id": 13,
+    "name": "Dell UltraSharp 27\" 4K",
+    "description": "27-inch IPS Black panel, USB-C hub with 90W charging, factory-calibrated Delta E < 2.",
+    "price": 849,
+    "image": "https://m.media-amazon.com/images/I/71-5MzMQG7L._AC_SX679_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71DmiG1lRJL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/711GrVZXiLL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71EWWM9c9TL._AC_SX679_.jpg"
+    ],
+    "category": "Monitors"
+  },
+  {
+    "id": 14,
+    "name": "LG UltraGear 27\" OLED",
+    "description": "27-inch OLED gaming monitor, 240Hz, 0.03ms, HDMI 2.1, G-Sync compatible.",
+    "price": 999,
+    "image": "https://m.media-amazon.com/images/I/71JGgBMb-HL._AC_SX679_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/711hIwEiPSL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81U7TCdhcSL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81qT18zxkAL._AC_SX679_.jpg"
+    ],
+    "category": "Monitors"
+  },
+  {
+    "id": 15,
+    "name": "iPad Pro M4 13\"",
+    "description": "Apple M4 chip, Ultra Retina XDR display, Thunderbolt 4. The ultimate creative canvas.",
+    "price": 1299,
+    "image": "https://www.ione.com.kh/wp-content/uploads/2025/08/ipad-pro-11-inch-m4-1-cambodia-1.png",
+    "images": [
+      "https://www.ione.com.kh/wp-content/uploads/2025/08/ipad-pro-11-inch-m4-1-cambodia-1.png",
+      "https://www.ione.com.kh/wp-content/uploads/2025/08/ipad-pro-11-inch-m4-3-cambodia.png",
+      "https://hips.hearstapps.com/hmg-prod/images/apple-ipad-pro-2024-66426a9292365.jpg?crop=0.670xw:1.00xh;0.151xw,0&resize=640:*"
+    ],
+    "category": "Tablets"
+  },
+  {
+    "id": 16,
+    "name": "Samsung Galaxy Tab S9 Ultra",
+    "description": "14.6-inch Dynamic AMOLED 2X, Snapdragon 8 Gen 2, included S Pen, DeX support.",
+    "price": 1199,
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/hk_en/2307/gallery/hk-en-galaxy-tab-s9-ultra-wifi-x910-sm-x910nzaetgy-537433710?$Q90_684_547_JPG$",
+    "images": [
+      "https://images.samsung.com/is/image/samsung/p6pim/hk_en/2307/gallery/hk-en-galaxy-tab-s9-ultra-wifi-x910-sm-x910nzaetgy-537433731?$Q90_684_547_JPG$",
+      "https://images.samsung.com/is/image/samsung/p6pim/hk_en/2307/gallery/hk-en-galaxy-tab-s9-ultra-wifi-x910-sm-x910nzaetgy-537433711?$Q90_684_547_JPG$",
+      "https://images.samsung.com/is/image/samsung/p6pim/hk_en/2307/gallery/hk-en-galaxy-tab-s9-ultra-wifi-x910-sm-x910nzaetgy-537433712?$Q90_684_547_JPG$"
+    ],
+    "category": "Tablets"
+  },
+  {
+    "id": 17,
+    "name": "Apple Watch Ultra 2",
+    "description": "49mm titanium case, S9 chip, precision dual-frequency GPS, 36-hour battery.",
+    "price": 799,
+    "image": "https://m.media-amazon.com/images/I/71bny1XbZ2L._AC_SX679_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/6165pya85SL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/51gEvogCebL._AC_SX679_.jpg",
+      "https://www.apple.com/newsroom/images/2023/09/apple-unveils-apple-watch-ultra-2/article/Apple-Watch-Ultra-2-double-tap-gesture-230912_big.jpg.large.jpg"
+    ],
+    "category": "Wearables"
+  },
+  {
+    "id": 18,
+    "name": "Samsung Galaxy Watch 6 Classic",
+    "description": "47mm rotating bezel, BioActive sensor, sapphire crystal, Wear OS powered by Samsung.",
+    "price": 399,
+    "image": "https://m.media-amazon.com/images/I/81Dm65eja8L._AC_SY300_SX300_QL70_FMwebp_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71PHI8UfPzL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61d9u4m5khL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61rhgjQ-a3L._AC_SX679_.jpg"
+    ],
+    "category": "Wearables"
   }
 ]

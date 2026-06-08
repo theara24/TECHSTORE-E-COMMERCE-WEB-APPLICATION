@@ -46,8 +46,8 @@ const Cart = () => {
         <div className="lg:w-2/3 space-y-6">
           {cartItems.map((item) => (
             <div key={item.id} className="bg-white p-8 rounded-[2rem] border border-slate-100 flex flex-col sm:flex-row items-center gap-8 shadow-sm hover:shadow-xl hover:shadow-slate-100 transition-all duration-500">
-              <div className="w-32 h-32 bg-slate-50 rounded-2xl overflow-hidden flex-shrink-0 border border-slate-100">
-                <img src={item.image} alt={item.name} className="w-full h-full object-cover mix-blend-multiply" />
+              <div className="w-32 h-32 bg-white rounded-2xl overflow-hidden flex-shrink-0 border border-slate-100 p-2">
+                <img src={item.image} alt={item.name} className="w-full h-full object-contain mix-blend-multiply" />
               </div>
               
               <div className="flex-grow text-center sm:text-left">

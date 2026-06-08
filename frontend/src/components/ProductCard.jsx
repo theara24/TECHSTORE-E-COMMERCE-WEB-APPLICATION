@@ -9,12 +9,12 @@ const ProductCard = ({ product }) => {
   return (
     <div className="group bg-white rounded-3xl overflow-hidden border border-slate-100 card-hover flex flex-col h-full">
       {/* Image Container */}
-      <div className="relative aspect-[4/5] overflow-hidden bg-slate-100">
+      <div className="relative aspect-[4/5] overflow-hidden bg-white p-4">
         <Link to={`/products/${product.id}`}>
           <img 
             src={product.image} 
             alt={product.name} 
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
           />
         </Link>
         <div className="absolute top-4 left-4">
