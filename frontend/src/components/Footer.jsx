@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Laptop, Github, Twitter, Instagram, Mail, Phone, MapPin, Globe, ArrowUpRight } from 'lucide-react';
+import { Laptop, Mail, Phone, MapPin, Globe, ArrowUpRight } from 'lucide-react';
+import { FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -21,7 +22,7 @@ const Footer = () => {
               Curating the future of professional hardware. Engineered for those who build the world.
             </p>
             <div className="flex gap-4">
-              {[Twitter, Instagram, Github, Globe].map((Icon, i) => (
+              {[FaTwitter, FaInstagram, FaGithub, Globe].map((Icon, i) => (
                 <a key={i} href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-blue-600 hover:border-blue-600 transition-all duration-300 text-white">
                   <Icon size={18} />
                 </a>

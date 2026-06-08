@@ -11,6 +11,7 @@ const ProductDetail = () => {
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [added, setAdded] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -24,6 +25,7 @@ const ProductDetail = () => {
       }
     };
     fetchProduct();
+    setSelectedImage(null);
   }, [id]);
 
   const handleAddToCart = () => {
@@ -57,17 +59,25 @@ const ProductDetail = () => {
       <div className="flex flex-col lg:flex-row gap-20 items-start">
         {/* Gallery Style Image */}
         <div className="lg:w-1/2 w-full sticky top-32">
-          <div className="bg-slate-50 rounded-[3rem] overflow-hidden aspect-square border border-slate-100 shadow-2xl shadow-slate-200/50">
+          <div className="bg-white rounded-[3rem] overflow-hidden aspect-square border border-slate-100 shadow-2xl shadow-slate-200/50 p-8">
             <img 
-              src={product.image} 
+              src={selectedImage || product.image} 
               alt={product.name} 
-              className="w-full h-full object-cover mix-blend-multiply"
+              className="w-full h-full object-contain mix-blend-multiply"
             />
           </div>
           <div className="grid grid-cols-4 gap-4 mt-6">
-            {[1, 2, 3, 4].map(i => (
-              <div key={i} className="aspect-square bg-slate-50 rounded-2xl border border-slate-100 opacity-50 hover:opacity-100 cursor-pointer transition-all overflow-hidden">
-                <img src={product.image} alt={product.name} className="w-full h-full object-cover mix-blend-multiply scale-150" />
+            {[product.image, ...(product.images || [])].slice(0, 4).map((img, i) => (
+              <div
+                key={i}
+                onClick={() => setSelectedImage(img)}
+                className={`aspect-square bg-white rounded-2xl border overflow-hidden cursor-pointer transition-all p-2 ${
+                  (selectedImage || product.image) === img
+                    ? 'border-blue-600 opacity-100 ring-2 ring-blue-600/20'
+                    : 'border-slate-100 opacity-50 hover:opacity-100'
+                }`}
+              >
+                <img src={img} alt={`${product.name} view ${i + 1}`} className="w-full h-full object-contain mix-blend-multiply" />
               </div>
             ))}
           </div>
